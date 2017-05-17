@@ -1,6 +1,3 @@
-此分支为所有项目（QJCG，TM，CH）都可用的接口自动化测试脚本
-----------------------------------------------
-
 1. 脚本执行入口为initTest.py，直接运行此文件就好，不用修改任何东西
 2. 用例的修改，添加，删除在Case/test_case.xls文件里
 3. 用例里，Data列无参数传递的情况，必须写成{}，不然会报错
@@ -14,6 +11,8 @@
 <pre><code>pip install pytest-html
 py.test initTest.py --html=./report.html
 </code></pre>
+也可使用allure测试报告
+<pre><code>pip install pytest_allure_adaptor</code></pre>
 ----------------------------------------------
 更新历史：
 
